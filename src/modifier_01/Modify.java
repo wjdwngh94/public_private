@@ -35,19 +35,32 @@ class Phone{
 }
 public class Modify {
 	public static void main(String[] args) {
-		
+		/*
 		Phone phone1 = new Phone("갤럭시5","skt",30000);
 		Phone phone2 = new Phone("G3","lgt",100000);
 		Phone phone3 = new Phone("아이폰6","kt",250000);
+		*/
 		
+		Phone[] phones = new Phone[3];
+
+		phones[0] = new Phone("갤럭시5","skt",30000);
+		phones[1] = new Phone("G3","lgt",100000);
+		phones[2] = new Phone("아이폰6","kt",250000);
+		
+		for (int i = 0; i < phones.length; i++) {
+			phones[i].getInfo();
+		}
+		
+		/*
 		phone1.setCo("SKT");
 		phone2.setCo("LGT");
 		phone3.setCo("KT");
-		
+		*/
+		/*
 		phone1.getInfo();
 		phone2.getInfo();
 		phone3.getInfo();
-		
+		*/
 		
 		
 		
