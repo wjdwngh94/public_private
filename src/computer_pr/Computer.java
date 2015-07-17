@@ -1,15 +1,26 @@
 package computer_pr;
 
 class Computer_{
-	
+
 	private String name, pd;
 	private int price;
 	
-	public Computer_(String name, String pd, int price){
+	
+	public Computer_(String name, String pd){
 		this.name=name;
 		this.pd=pd;
+	}
+	public Computer_(String name, String pd, int price){
 		this.price=price;
 	}
+
+	public String getName() {
+		return name;
+	}
+	public String getPd() {
+		return pd;
+	}
+	
 	public void setPrice(int price){
 		if(price>50000)
 		{
@@ -20,6 +31,8 @@ class Computer_{
 			return ;
 		}
 	}
+	
+	
 	public void getInfo(){
 		System.out.println("이름:"+ this.name);
 		System.out.println("제조사:"+ this.pd);

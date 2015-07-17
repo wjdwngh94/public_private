@@ -17,15 +17,19 @@ class Phone{
 	}
 	
 	public void setPrice(int price){
+		
 		if(price>100000){
 			System.out.println("가격 설정이 완료되었습니다.");
 			this.price = price;
 		}
+		
 		else{
 			System.out.println("가격 설정 오류 입니다.");
 			return;
 		}
+		
 	}
+	
 	public void getInfo(){
 		System.out.println("이름 : " + this.name);
 		System.out.println("통신사 : " + this.co);
